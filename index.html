@@ -134,11 +134,8 @@ button {
 
 <body>
 
-<header class="vishal">🎉 HAPPY BIRTHDAY NANCY BRO  💖🎂</header>
+<header class="vishal">🎉 HAPPY BIRTHDAY  BRO  💖🎂</header>
 
-
-
-    
 </script>
 <!-- Balloons -->
 <div class="balloon" style="left:10%; background:red;"></div>
@@ -173,7 +170,6 @@ button {
 <audio id="music" loop>
     <source src="vp.mp3.mpeg" type="audio/mpeg">
 </audio>
-
 <script>
 // Confetti
 for (let i = 0; i < 60; i++) {
@@ -184,7 +180,6 @@ for (let i = 0; i < 60; i++) {
     c.style.animationDuration = (Math.random()*3+2) + "s";
     document.body.appendChild(c);
 }
-
 // Fireworks
 function createFirework(x, y) {
     let fw = document.createElement("div");
@@ -192,16 +187,12 @@ function createFirework(x, y) {
     fw.style.left = x + "px";
     fw.style.top = y + "px";
     document.body.appendChild(fw);
-
     setTimeout(() => fw.remove(), 1000);
 }
-
 // Start celebration
 function startParty() {
     document.getElementById("music").play();
-
     alert("🎉 Let the celebration begin! 🎂");
-
     for (let i = 0; i < 20; i++) {
         setTimeout(() => {
             createFirework(
